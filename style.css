@@ -1,0 +1,336 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    background-color: white;
+    color: #333;
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1abc9c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+.navbar-toggler-icon {
+    background-image: url("https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png");
+}
+
+/* Presentación */
+#presentacion {
+    background-image: linear-gradient(rgba(5, 7, 10, 0.40), rgba(5, 7, 10, 0.40)), url(/Turismo/bootstrap/img/presentacion.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    
+}
+
+#presentacion h1 {
+    color: #06d1fe;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    
+}
+
+#presentacion p {
+    font-size: 1.2rem;
+    font-weight: 200px;
+    color: white;
+    text-align: left;
+    
+}
+
+/* Sección de Actividades */
+#actividades {
+    padding: 50px 0;
+    background-color: #eafaf1;
+}
+
+#actividades h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#actividades .col-md-4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#actividades .col-md-4 h3 {
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#actividades .col-md-4 p {
+    color: #2c3e50;
+}
+
+#imagenes{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+#imagenes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#galeria {
+    background-color: antiquewhite;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+#gallery {
+    height: 200px;
+    max-width: 20rem;
+    max-height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 20px;
+    
+}
+
+
+#galeria .col-sm-4{
+    border: 1px solid black;
+}
+
+
+#testimonios {
+    background-color: #ffffff;
+    padding: 50px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#testimonios h2 {
+    color: #e74c3c;
+}
+
+#testimonios p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.list-group-item {
+    background-color: #fef9e7;
+    border: none;
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Formulario de contacto */
+#contacto {
+    background-color: #eafaf1;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contacto .form-control {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto button {
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contacto button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Equipo de trabajo */
+#equipo {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+#equipo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#equipo ul li {
+    font-size: 1.2rem;
+    color: #34495e;
+    padding: 10px 0;
+}
+
+/* Preguntas Frecuentes */
+#faq {
+    padding: 50px 0;
+}
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#faq ul {
+    max-width: 800px;
+    margin: auto;
+}
+
+#faq ul li {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    padding: 15px;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #5e5886;
+    color: rgb(45, 86, 54);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Botones de hover */
+.btn-primary:hover {
+    background-color: #f39c12;
+    border-color: #f39c12;
+    transform: scale(1.05);
+}
+
+
+
+
+@media (min-width: 300px) {
+
+    #presentacion h1 {
+        font-size: 50px;
+    }
+    .card {
+        width: 48%;
+    }
+
+   
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: 23%;
+    }
+}
